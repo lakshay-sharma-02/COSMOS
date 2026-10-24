@@ -1,0 +1,11 @@
+[package]
+name = "cosmos_sim"
+version = { workspace = true }
+edition = { workspace = true }
+license = { workspace = true }
+repository = { workspace = true }
+description = "Pure-Rust simulation core for the COSMOS universe project"
+
+[dependencies]
+# Seeded deterministic randomness — small and fast.
+rand = { version = "0.8", default-features = false, features = ["small_rng"] }

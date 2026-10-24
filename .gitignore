@@ -1,0 +1,6 @@
+# Rust / Cargo
+/target
+
+# The Cargo.lock is intentionally NOT committed for a library workspace;
+# it can be committed for the binary app if desired.
+Cargo.lock

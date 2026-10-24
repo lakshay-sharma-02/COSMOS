@@ -1,0 +1,8 @@
+# Cargo configuration for COSMOS
+#
+# The GNU toolchain (default on this machine) can check/cosmos_sim-test successfully
+# but cannot link Bevy's Windows dependencies without MinGW or Windows SDK.
+# To build cosmos_app, either:
+#   1. Install MSYS2/mingw-w64, or
+#   2. Install Visual Studio Build Tools with the C++ workload + Windows SDK, then
+#      switch to the MSVC toolchain with: rustup default stable-x86_64-pc-windows-msvc

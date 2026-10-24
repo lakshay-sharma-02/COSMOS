@@ -1,0 +1,14 @@
+[package]
+name = "cosmos_app"
+version = { workspace = true }
+edition = { workspace = true }
+license = { workspace = true }
+repository = { workspace = true }
+description = "Bevy-based renderer and UI for the COSMOS universe simulation"
+
+[dependencies]
+# Workspace crates
+cosmos_sim = { path = "../cosmos_sim" }
+
+# Rendering & windowing
+bevy = "0.20"

@@ -1,0 +1,22 @@
+[workspace]
+resolver = "2"
+members = [
+    "cosmos_sim",
+    "cosmos_app",
+]
+# Keep dev-dependencies minimal to reduce compile time and memory.
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/lakshay-sharma-02/COSMOS.git"
+
+[profile.dev]
+opt-level = 0
+
+# Release profile tuned for lower memory usage on 4 GB machines.
+[profile.release]
+opt-level = 2
+lto = "thin"
+codegen-units = 1
+strip = true
